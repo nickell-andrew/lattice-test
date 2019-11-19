@@ -1,0 +1,24 @@
+{
+  "name": "lattice-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devServer": "nodemon server/index.js",
+    "prep": "npm i && npm i --prefix lattice-client",
+    "startServer": "npm i && node server/index.js",
+    "startClient": "npm i --prefix lattice-client && npm start --prefix lattice-client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
